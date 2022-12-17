@@ -1,8 +1,17 @@
+---
+layout: post
+title: "Hello World"
+description: Forcing myself to write posts by creating a blog
+date: 2022-12-17 16:15:00 +0000
+---
+
 # Hello World
 
-![Burt](https://media.giphy.com/media/9rOf9y6mtH78hTdToQ/giphy.gif)
+![Burt](https://media.giphy.com/media/9rOf9y6mtH78hTdToQ/giphy.gif){: .center-image }
 
-is yet another programming blog. Hi anyone that's reading! I'm Oli. A software engineer with a passion for functional programming. I've been meaning to write up some of my ideas on programming and perhaps other topics for a long while now. I've had a draft blog for a few years, at the time of writing I have
+is yet another programming blog.
+
+Hi anyone that's reading! I'm Oli. A software engineer with a passion for functional programming. I've been meaning to write up some of my ideas on programming and perhaps other topics for a long while now. I've had a draft blog for a few years, at the time of writing I have...
 
 ```bash
 ➜  blog git:(main) ls _drafts |  wc -l
