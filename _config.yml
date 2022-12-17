@@ -1,0 +1,12 @@
+domain: olib963.github.io
+url: https://olib963.github.io
+markdown: kramdown
+repository:  olib963/blog
+theme: minima
+exclude: 
+  - _ideas
+  - Gemfile
+
+minima:
+  social_links:
+    github: olib963
