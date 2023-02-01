@@ -6,7 +6,8 @@ theme: minima
 exclude:
   - _ideas
   - Gemfile
-
+site:
+  paginate: true
 minima:
   social_links:
     github: olib963
