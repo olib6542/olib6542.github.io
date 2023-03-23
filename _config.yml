@@ -1,13 +1,16 @@
-domain: olib963.github.io
-url: https://olib963.github.io
+domain: olib6542.github.io
+url: https://olib6542.github.io
 markdown: kramdown
-repository: olib963/blog
+repository: olib6542/olib6542.github.io
+title: Blog
+description: Hopefully my future blog site
 theme: minima
 exclude:
   - _ideas
   - Gemfile
+
+plugins:
+  - jekyll-feed # RSS feed
+
 site:
   paginate: true
-minima:
-  social_links:
-    github: olib963
