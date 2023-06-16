@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description: Forcing myself to write posts by creating a blog
-date: 2022-12-17 16:15:00 +0000
+date: 2022-12-17
 ---
 
 <style type="text/css">
