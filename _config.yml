@@ -3,6 +3,7 @@ url: https://olib6542.github.io
 markdown: kramdown
 repository: olib6542/olib6542.github.io
 title: Blog
+# email: # TODO setup an inbox for this
 description: Hopefully my future blog site
 theme: minima
 exclude:
