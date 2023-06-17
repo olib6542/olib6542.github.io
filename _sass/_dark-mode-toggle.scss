@@ -1,0 +1,62 @@
+// TODO it would be nice to slow the transition between the dark and light mode
+// Defines the dark/light mode switch. Dark mode is default and represented by an "on" toggle
+
+// Define the box around the slider
+.dark-mode-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 1.5%;
+}
+
+// Hide the checkbox
+.dark-mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+// Define the slider box. The colours are the inversion of the current mode
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: $dark-mode-black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: $white;
+}
+
+// Define the toggle circle as empty content "before" the slider. Use the same colours as the current mode
+.slider:before {
+    position: absolute;
+    content: "";
+    background-color: $white;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+// Use the same colours as the current mode
+input:checked + .slider:before {
+    background-color: $dark-mode-black;
+}
+
+// Create a sliding transition effect on click
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

@@ -29,4 +29,12 @@ The plan is to release one blog every 3 months, meaning the first post should go
 
 ## Changelog
 
+### March 2023
+
 Hooray! I managed to post my first blog post. Having a deadline really did help me actually get moving on this! I've decided that I'm going to allow myself to build one non-post feature for every two posts I write to give a little break between writing. Given this, hopefully I'll have a small feature and a new post by June 🤞🏻.
+
+### June 2023
+
+It seems like 3 months is a good pace for me, I might try to keep aiming for that so theoretically the next post I write should be ready by the end of September. Now that I've finished two posts I feel like it's OK to allow myself to add in some non-writing work so I've added a simple dark mode toggle. It's one of the things I find most frustrating about many websites, even most google sites don't have a dark mode so I thought that was the best one to start with. Two posts per one non-writing feature seems like a good balance as well.
+
+I'll also probably split this changelog into it's own page in the future since I feel like this could become a bit unwieldy if I keep this blog up for as long as I intend to.

@@ -1,0 +1,73 @@
+// Define variables for each key lookup in the theme
+$background: 'bg';
+$text-colour: 'text';
+$brand-colour: 'brand';
+$code-background: 'code-bg';
+$table-text-colour: 'table-text';
+$comment-colour: 'comment';
+$error-colour: 'error';
+$error-background-colour: 'error-bg';
+$string-literal-colour: 'string';
+
+// Common colours used globally
+$gray: rgb(130, 130, 130);
+$orange: rgb(246, 106, 10);
+$blue: rgb(42, 122, 226);
+$light-gray: lighten($gray, 40%);
+$dark-gray: darken($gray, 25%);
+
+// Define Light mode variables
+$white: rgb(253, 253, 253);
+$black: rgb(17, 17, 17);
+$code-bg: rgb(238, 238, 255);
+
+// Define Dark mode variables
+$dark-mode-black: rgb(37, 37, 37);
+$dark-mode-gray: rgb(153, 153, 153);
+$dark-mode-code-bg: rgb(25, 25, 25);
+
+// Create map of each key to be used
+$themes: (
+    light: (
+        bg: $white,
+        text: $black,
+        brand: $blue,
+        code-bg: $code-bg,
+        table-text: lighten($black, 18%),
+        comment: rgb(153, 153, 136),
+        error: rgb(166, 23, 23),
+        error-bg: rgb(227, 210, 210),
+        string: rgb(221, 17, 68),
+        fn-ex: rgb(153, 0, 0),
+    ),
+    dark: (
+        bg: $dark-mode-black,
+        text: $dark-mode-gray,
+        brand: $blue,
+        code-bg: $dark-mode-code-bg,
+        table-text: darken($dark-mode-gray, 18%),
+        comment: rgb(136, 136, 136),
+        error: rgb(166, 23, 23),
+        error-bg: rgb(227, 210, 210),
+        string:  rgb(144, 169, 89),
+    ),
+);
+
+// Create a global map of Themes
+@mixin themed() {
+  @each $theme, $map in $themes {
+    html[data-theme="#{$theme}"] & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function theme($key) {
+  @return map-get($theme-map, $key);
+}
