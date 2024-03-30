@@ -38,3 +38,17 @@ Hooray! I managed to post my first blog post. Having a deadline really did help 
 It seems like 3 months is a good pace for me, I might try to keep aiming for that so theoretically the next post I write should be ready by the end of September. Now that I've finished two posts I feel like it's OK to allow myself to add in some non-writing work so I've added a simple dark mode toggle. It's one of the things I find most frustrating about many websites, even most google sites don't have a dark mode so I thought that was the best one to start with. Two posts per one non-writing feature seems like a good balance as well.
 
 I'll also probably split this changelog into it's own page in the future since I feel like this could become a bit unwieldy if I keep this blog up for as long as I intend to.
+
+### December 2023
+
+It took a little longer than planned to get a new post out for a couple of reasons.
+
+1. I got married this year 🎉 Planning a wedding takes up a lot of time.
+1. I use Jekyll and Github pages for this site, my local setup broke _yet again_
+1. I've got too many ideas that aren't yet fully formed (as mentioned above 51 drafts which has now grown to 63)
+
+### March 2023
+
+I was struggling to write this one, it kept ballooning. In the end I've split it into 5 different draft posts on testing methodology with smaller scope, it was far too big to be readable! I've push a much smaller, high level summary of test requirements as a post and will hopefully turn the rest of the post into a smaller series.
+
+Given that I've written two more posts, I'm allowing myself to add another "feature" to the blog so hopefully 🤞🏻 I can get this to work over the next couple of weeks.
